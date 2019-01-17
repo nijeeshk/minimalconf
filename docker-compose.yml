@@ -1,0 +1,12 @@
+version: '3'
+services:
+  myapp:
+    container_name: my-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/data
+    command: yarn run dev:start
+    ports:
+      - 7000:7000

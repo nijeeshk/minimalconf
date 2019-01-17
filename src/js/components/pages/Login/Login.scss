@@ -1,0 +1,85 @@
+@import '../../../../assets/stylesheets/variables';
+
+.lgn-wrap {
+  min-height: 100vh;
+  padding: 1rem;
+  background: #f3f4f5;
+  .lgn-box {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 0.9rem;
+    position: relative;
+    padding: 5rem 1.5rem;
+    @media (min-width: 768px) {
+      padding: 5rem;
+    }
+    .hdr {
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: left;
+        width: 100%;
+        display: block;
+        padding-bottom: 2rem;
+      }
+    }
+    .form-group {
+      margin-bottom: 2rem;
+    }
+    label {
+      font-size: 13px;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+    input.form-control {
+      line-height: 1.2;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      background: transparent;
+      height: 55px;
+      padding: 0 25px 0 25px;
+      box-shadow: none !important;
+      transition: border-color .4s;
+      &:focus {
+        border-color: $orange;
+      }
+      &.red {
+        border-color: #f4516c;
+      }
+    }
+    .submit {
+      padding-top: 1rem;
+    }
+    input[type="submit"] {
+      outline: none !important;
+      border: none;
+      width: auto;
+      background: transparent;
+      box-shadow: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      min-width: 150px;
+      height: 55px;
+      border-radius: 27px;
+      transition: all 0.4s;
+      display: flex;
+      background-color: #333333;
+      color: #fff;
+      &:not([disabled]) {
+        &:hover,
+        &:focus {
+          background-color: $orange;
+        }
+      }
+    }
+    
+  }
+}
